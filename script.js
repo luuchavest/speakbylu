@@ -6,14 +6,16 @@ $form.addEventListener('submit', async (event) => {
     const $btn = $form.querySelector('button');
     const originalText = $btn.textContent;
 
+    // Feedback visual
     $btn.textContent = "Enviando...";
     $btn.disabled = true;
 
+    // Usamos la URL directa para evitar errores de referencia
+    const action = "https://formsubmit.co/ajax/luuchavest@gmail.com";
     const formData = new FormData($form);
 
     try {
-    
-        const response = await fetch($form.action, {
+        const response = await fetch(action, {
             method: "POST",
             body: formData,
             headers: {
@@ -21,17 +23,14 @@ $form.addEventListener('submit', async (event) => {
             }
         });
 
-        const json = await response.json();
-
         if (response.ok) {
-            alert('¡Listo Lu! Recibí tus datos perfectamente. ✨');
+            alert('¡Listo Lu! El mensaje se envió correctamente. ✨');
             $form.reset();
         } else {
-            
-            alert(`Error: ${json.message || 'No se pudo enviar'}`);
+            alert('Error en el servidor. Reintentá en un momento.');
         }
     } catch (error) {
-        alert('Error de red. ¿Estás conectada a internet o la URL es correcta?');
+        alert('Error de conexión. Chequeá tu internet.');
         console.log(error);
     } finally {
         $btn.textContent = originalText;
