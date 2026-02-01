@@ -425,4 +425,57 @@ footer .copyright h5 {
   text-decoration: none;
 }
 
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+  .header-section,
+  .cursos,
+  .descripcion-cursos,
+  .descripcion.cursos,
+  #inicio,
+  footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    padding: 40px 5% !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .basic,
+  .fluency,
+  #basic-mastery,
+  #fluency-booster,
+  .formulario {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    padding: 30px 20px !important;
+    height: auto !important;
+    border-radius: 30px !important;
+  }
+  .accuracy {
+    font-size: 35px !important;
+    line-height: 1.1 !important;
+    width: 100% !important;
+  }
+  .online {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: 10px auto !important;
+    transform: rotate(0deg) !important;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .nav-bar a, button {
+    width: 100% !important;
+    display: block !important;
+    padding: 15px !important;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
