@@ -1,6 +1,6 @@
 console.log("¡Script cargado correctamente!");
 
-const $form = document.querySelector('.formulario');
+const $form = document.querySelector('.formsubmit');
 
 $form.addEventListener('submit', async (event) => {
     event.preventDefault();
