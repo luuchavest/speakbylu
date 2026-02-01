@@ -1,21 +1,21 @@
+console.log("¡Script cargado correctamente!");
+
 const $form = document.querySelector('.formulario');
 
 $form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    console.log("Formulario capturado, iniciando envío...");
 
     const $btn = $form.querySelector('button');
     const originalText = $btn.textContent;
 
-    // Feedback visual
     $btn.textContent = "Enviando...";
     $btn.disabled = true;
 
-    // Usamos la URL directa para evitar errores de referencia
-    const action = "https://formsubmit.co/ajax/luuchavest@gmail.com";
     const formData = new FormData($form);
 
     try {
-        const response = await fetch(action, {
+        const response = await fetch("https://formsubmit.co/ajax/luuchavest@gmail.com", {
             method: "POST",
             body: formData,
             headers: {
@@ -23,15 +23,18 @@ $form.addEventListener('submit', async (event) => {
             }
         });
 
+        const json = await response.json();
+        console.log("Respuesta de FormSubmit:", json);
+
         if (response.ok) {
-            alert('¡Listo Lu! El mensaje se envió correctamente. ✨');
+            alert('¡Listo Lu! Mensaje enviado. ✨');
             $form.reset();
         } else {
-            alert('Error en el servidor. Reintentá en un momento.');
+            alert('Error al enviar: ' + json.message);
         }
     } catch (error) {
-        alert('Error de conexión. Chequeá tu internet.');
-        console.log(error);
+        console.error("Error detectado:", error);
+        alert('Hubo un error de conexión o de código.');
     } finally {
         $btn.textContent = originalText;
         $btn.disabled = false;
