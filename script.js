@@ -27,7 +27,7 @@ $form.addEventListener('submit', async (event) => {
         console.log("Respuesta de FormSubmit:", json);
 
         if (response.ok) {
-            alert('¡Listo Lu! Mensaje enviado. ✨');
+            alert('¡Listo! Mensaje enviado. Lu te responderá pronto. ✨');
             $form.reset();
         } else {
             alert('Error al enviar: ' + json.message);
