@@ -1,0 +1,517 @@
+/* 1. RESET Y VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    $secondary-color: #f9a8d4; 
+    $primary-color: #b81d7e; 
+    $button-color: #facc15; 
+    $color: #ffffff;
+    $color2: #fff6ea;
+    $main-font: 'DM Serif Display', serif;
+    $secondary-font: 'Comfortaa', cursive;
+
+$color1: #fe67c4; 
+$third-color:#f1b5d0; 
+$fourth-color: #b81d7e; 
+$main-font: "DM Serif Display", serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color1 ;
+    background: linear-gradient($color1, $color)
+
+}
+
+/*HEADER*/
+ header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2%;
+    
+ }
+
+.header-section {
+    display: flex;
+    gap: 500px;
+    margin-top: 20px;
+
+.logo-header {
+    display: flex;
+    flex-direction: row;
+    color: $color;
+    font-family: $main-font;
+    
+h1 {
+    font-size: 3rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 3.5;
+}
+
+}
+
+.nav-bar a {
+    background-color: $button-color;
+    color: black;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+
+}
+}
+
+/*INICIO*/
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 500px;
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+
+.titulo-accuracy {
+    position: relative;
+    display: inline-block;
+}
+
+.accuracy  {
+    font-family: $main-font;
+    font-size: 80px; 
+    color: #ffffff;
+    line-height: 1.1;
+    margin: 0;
+    max-width: 500px;
+}
+
+.online {
+    position: absolute;
+    top: -20px;
+    right: -100px; 
+    background-color: #be185d;
+    color: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(10deg);
+}
+
+.boton-contact {
+    background-color: $button-color;
+    color: black;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+.teacher-img img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 45%;
+}
+}
+
+
+
+
+
+
+
+/*CURSOS*/ 
+.titulo-cursos, .titulo-faqs, .titulo-info{
+ font-family: $secondary-font;
+ color: $color2;
+ font-size: 40px;
+ width: 100%;
+ text-align: center;
+
+}
+
+.titulo-info, .titulo-faqs {
+    color: $primary-color;
+ }
+
+
+.cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+
+
+.basic, .fluency {
+    color: $color;
+    background-color: #ce5ba3;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 40px;
+    width: 350px; 
+    min-height: 300px;
+    flex-direction: column;
+}
+
+  }
+
+.descripcion-cursos {
+    display: flex;
+}
+
+.materiales-digitales {
+    font-family: $secondary-font;
+    color: $color;
+    max-width: 500px;  
+    margin-left: auto;  
+    margin-right: auto; 
+    text-align: center; 
+    line-height: 1.5;  
+    padding: 20px;
+}
+
+#basic-mastery, #fluency-booster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 10%;
+    background-color: $third-color ;
+    border-radius: 20px;
+
+h2 {
+    font-family: $secondary-font;
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.parrafo-basic, .parrafo-fluency {
+    font-family:$main-font;
+    color: $primary-color;
+}
+
+button {
+ color: $color;
+ background-color: $fourth-color;
+ border-radius: 50px;
+ border: none;
+ padding: 15px 40px;
+ font-family: $secondary-font;
+ font-weight: bold;
+ transition: transform 0.3s, background-color 0.3s;
+ margin-top: 10px;
+}
+
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color:$primary-color;
+}
+
+
+/*FAQS*/
+
+#faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5%;
+
+}
+
+#faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: var ($primary-color); 
+}
+
+
+
+
+details {
+    width: 100%;
+    max-width: 700px; 
+    background-color: $primary-color;
+    margin-bottom: 15px;
+    border-radius: 20px; 
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+summary {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    cursor: pointer;
+    list-style: none; 
+    color: white;
+    font-family: var(--font-body);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+summary::after {
+    content: 'v';
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+
+details p {
+    padding: 0 30px 25px 30px;
+    color: white;
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+#cierre {
+    font-family: $secondary-font;
+    color: $fourth-color;
+    max-width: 500px;  
+    margin-left: auto;  
+    margin-right: auto; 
+    text-align: center; 
+    line-height: 1.5;  
+    padding: 20px;
+
+.bold {
+    font-weight: bold;
+    background-color: $fourth-color;
+    color: $color;
+    border-radius: 15px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+}
+}
+
+
+/*FORMULARIO + INFO*/
+
+#section-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    
+    .titulo-info {
+        font-family: $secondary-font; 
+        color: $fourth-color; 
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+}
+
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    background-color: $third-color; 
+    border-radius: 40px;
+    padding: 50px;
+
+    
+    .pregunta {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 20px;
+        color: $fourth-color;
+        font-family: $secondary-font;
+        font-weight: bold;
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            box-sizing: border-box; 
+        }
+    }
+
+    .seleccionar {
+        background-color: $fourth-color;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 25px;
+
+    }
+
+    
+        label { 
+            color: $primary-color;
+            margin-bottom: 5px;
+            font-size:15px;
+        }
+
+        .opcion {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 10px;
+        
+            input[type="radio"] {
+                width: auto; 
+            }
+            
+            .label { 
+                background-color: $fourth-color; 
+                font-family: $secondary-font;
+                color: white;
+                border-radius: 15px;
+                font-weight: normal;
+                padding: 10px;
+            }
+        }
+
+    button {
+        display: flex;
+        background-color:$button-color ; 
+        color: black;
+        font-weight: bold;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 50px;
+        cursor: pointer;
+        align-self: center;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+
+
+
+/*FOOTER*/
+ footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: $primary-color;
+    padding: 60px 10% 20px 10%;
+    justify-content: space-between;
+    gap: 40px;
+    font-family: $secondary-font;
+
+
+h2 {  
+    display: flex;
+    flex-direction: row;
+    color: $primary-color;
+    font-family: $main-font;
+    font-size: 3rem;
+
+}
+
+
+section {
+    flex: 1;
+    min-width:200px;
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba (255,255,255,0.3);
+    }
+
+    h4 {
+        margin: 10px 0;
+        font-family: $secondary-font;
+    }
+
+    p , a {
+        display: block;
+        color: $primary-color;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        transition: opacity 0.3;
+        font-weight: bold;
+
+        &:hover {
+            opacity:0.7;
+        }
+    }
+}
+
+
+.copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba (255,255,255,0.1);
+
+
+    h5 {
+        font-weight: normal;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+}
+ }
+
+ 
+.link-texto {
+    color: $color;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3 ease;
+
+
+    &:hover {
+        color: $color1;
+        text-decoration: none;
+    }
+}

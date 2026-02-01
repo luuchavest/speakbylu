@@ -1,0 +1,428 @@
+/* 1. RESET Y VARIABLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fe67c4;
+  background: linear-gradient(#fe67c4, #ffffff);
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 2%;
+}
+
+.header-section {
+  display: flex;
+  gap: 500px;
+  margin-top: 20px;
+}
+.header-section .logo-header {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  font-family: "DM Serif Display", serif;
+}
+.header-section .logo-header h1 {
+  font-size: 3rem;
+}
+.header-section .logo-header .subtitulo {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 3.5;
+}
+.header-section .nav-bar a {
+  background-color: #facc15;
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+}
+
+/*INICIO*/
+#inicio {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 8%;
+  min-height: 500px;
+}
+#inicio .bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+#inicio .titulo-accuracy {
+  position: relative;
+  display: inline-block;
+}
+#inicio .accuracy {
+  font-family: "DM Serif Display", serif;
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  max-width: 500px;
+}
+#inicio .online {
+  position: absolute;
+  top: -20px;
+  right: -100px;
+  background-color: #be185d;
+  color: white;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(10deg);
+}
+#inicio .boton-contact {
+  background-color: #facc15;
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+}
+#inicio .teacher-img img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 45%;
+}
+
+/*CURSOS*/
+.titulo-cursos, .titulo-faqs, .titulo-info {
+  font-family: "Comfortaa", cursive;
+  color: #fff6ea;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-info, .titulo-faqs {
+  color: #b81d7e;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+}
+.cursos .basic, .cursos .fluency {
+  color: #ffffff;
+  background-color: #ce5ba3;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 40px;
+  width: 350px;
+  min-height: 300px;
+  flex-direction: column;
+}
+
+.descripcion-cursos {
+  display: flex;
+}
+
+.materiales-digitales {
+  font-family: "Comfortaa", cursive;
+  color: #ffffff;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#basic-mastery, #fluency-booster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #f1b5d0;
+  border-radius: 20px;
+}
+#basic-mastery h2, #fluency-booster h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 3rem;
+  color: #b81d7e;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#basic-mastery .parrafo-basic, #basic-mastery .parrafo-fluency, #fluency-booster .parrafo-basic, #fluency-booster .parrafo-fluency {
+  font-family: "DM Serif Display", serif;
+  color: #b81d7e;
+}
+#basic-mastery button, #fluency-booster button {
+  color: #ffffff;
+  background-color: #b81d7e;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 40px;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #b81d7e;
+}
+
+/*FAQS*/
+#faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 5%;
+}
+
+#faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 5%;
+  background-color: var #b81d7e;
+}
+
+details {
+  width: 100%;
+  max-width: 700px;
+  background-color: #b81d7e;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+summary {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  color: white;
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "v";
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+details p {
+  padding: 0 30px 25px 30px;
+  color: white;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+#cierre {
+  font-family: "Comfortaa", cursive;
+  color: #b81d7e;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+}
+#cierre .bold {
+  font-weight: bold;
+  background-color: #b81d7e;
+  color: #ffffff;
+  border-radius: 15px;
+}
+#cierre .bold:hover {
+  transform: scale(1.05);
+}
+
+/*FORMULARIO + INFO*/
+#section-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+#section-formulario .titulo-info {
+  font-family: "Comfortaa", cursive;
+  color: #b81d7e;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f1b5d0;
+  border-radius: 40px;
+  padding: 50px;
+}
+.formulario .pregunta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #b81d7e;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+}
+.formulario .pregunta input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-sizing: border-box;
+}
+.formulario .seleccionar {
+  background-color: #b81d7e;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.formulario label {
+  color: #b81d7e;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.formulario .opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px;
+}
+.formulario .opcion input[type=radio] {
+  width: auto;
+}
+.formulario .opcion .label {
+  background-color: #b81d7e;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  border-radius: 15px;
+  font-weight: normal;
+  padding: 10px;
+}
+.formulario button {
+  display: flex;
+  background-color: #facc15;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: center;
+  transition: transform 0.2s;
+}
+.formulario button:hover {
+  transform: scale(1.05);
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #b81d7e;
+  padding: 60px 10% 20px 10%;
+  justify-content: space-between;
+  gap: 40px;
+  font-family: "Comfortaa", cursive;
+}
+footer h2 {
+  display: flex;
+  flex-direction: row;
+  color: #b81d7e;
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+}
+footer section {
+  flex: 1;
+  min-width: 200px;
+}
+footer section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba 255, 255, 255, 0.3;
+}
+footer section h4 {
+  margin: 10px 0;
+  font-family: "Comfortaa", cursive;
+}
+footer section p, footer section a {
+  display: block;
+  color: #b81d7e;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  transition: opacity 0.3;
+  font-weight: bold;
+}
+footer section p:hover, footer section a:hover {
+  opacity: 0.7;
+}
+footer .copyright {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba 255, 255, 255, 0.1;
+}
+footer .copyright h5 {
+  font-weight: normal;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.link-texto {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3 ease;
+}
+.link-texto:hover {
+  color: #fe67c4;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
