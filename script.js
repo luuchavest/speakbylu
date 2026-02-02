@@ -40,3 +40,19 @@ $form.addEventListener('submit', async (event) => {
         $btn.disabled = false;
     }
 });
+
+
+const btnMenu = document.querySelector('#fila-hamburguesa');
+const navBar = document.querySelector('.nav-bar');
+
+btnMenu.addEventListener('click', () => {
+    
+    navBar.classList.toggle('mostrar');
+});
+
+
+document.querySelectorAll('.nav-bar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navBar.classList.remove('mostrar');
+    });
+});
