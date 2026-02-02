@@ -552,5 +552,12 @@ footer .copyright h5 {
     margin: 0 auto;
   }
 }
+.img-footer {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 45%;
+  margin-left: 500px;
+}
 
 /*# sourceMappingURL=styles.css.map */
